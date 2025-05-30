@@ -26,14 +26,21 @@ SECRET_KEY = 'django-insecure-o)p0im(u0w2c#rfl_v=rj-ry*y^74=c9k6gx0%6xbi_pckyk!r
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost'
+    'localhost',
+    'flix-recommender-api.onrender.com',
+    'https://flix-recommender.vercel.app'
  ]
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
+    'flix-recommender-api.onrender.com',
+    'https://flix-recommender.vercel.app'
+
 ]
 CORS_ALLOWED_ORIGINS = [
-    
+    'flix-recommender-api.onrender.com',
+    'https://flix-recommender.vercel.app',
+
     'http://localhost:3000',
 ]
 

@@ -28,19 +28,18 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     'flix-recommender-api.onrender.com',
-    'https://flix-recommender.vercel.app'
+    'flix-recommender.vercel.app'
  ]
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'flix-recommender-api.onrender.com',
+    'https://flix-recommender-api.onrender.com',
     'https://flix-recommender.vercel.app'
 
 ]
 CORS_ALLOWED_ORIGINS = [
-    'flix-recommender-api.onrender.com',
+    'https://flix-recommender-api.onrender.com',
     'https://flix-recommender.vercel.app',
-
     'http://localhost:3000',
 ]
 

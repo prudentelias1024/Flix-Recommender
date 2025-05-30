@@ -5,15 +5,15 @@ export default function Input({moviesSetter, textSetter}) {
   const [URL, setURL] = useState()
   useEffect(() => {
      if (process.env.NODE_ENV == 'production') {
-       setURL("flix-recommender-api.onrender.com")
+       setURL("flix-recommender-api.onrender.com/")
       }else{
-       setURL("localhost:8000")
+       setURL("localhost:8000/")
      }
   })
   const recommend = async(event) => {
 
     event.preventDefault()
-     const movies = await (await axios.post(`${URL}/api/recommend/`,{query: inputRef.current.value })).data  
+     const movies = await (await axios.post(`${URL}api/recommend/`,{query: inputRef.current.value })).data  
      let sorted_movies = []
      let no_poster = []
      let new_movies = JSON.parse(movies)

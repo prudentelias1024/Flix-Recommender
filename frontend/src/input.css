@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+*
+{
+    height: 100%;
+    width: 100%;
+   
+    background: black;
+}
+body{
+     overflow-x: hidden;
+    overflow-y: auto;  
+}
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+.m_box 
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30% 30% 30%;
+}
